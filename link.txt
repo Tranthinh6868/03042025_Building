@@ -9,3 +9,12 @@ http://localhost:15672/#/
 
 
 http://localhost:8761/
+
+
+
+keycloak:
+docker run -d --name keycloak --rm -p 8181:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin -v "D:\DATA\Java\03042025_Building user dockerPathContainerForKeyCloak:/opt/keycloak/data" quay.io/keycloak/keycloak:26.1.4 start-devadmin
+admin
+
+
+docker run -p 8080:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:26.2.0 start-dev

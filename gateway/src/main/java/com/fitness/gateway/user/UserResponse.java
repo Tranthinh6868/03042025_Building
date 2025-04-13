@@ -1,6 +1,6 @@
-package com.fitness.userservice.dto;
+package com.fitness.gateway.user;
 
-import com.fitness.userservice.model.UserRole;
+
 import lombok.Data;
 
 import java.time.LocalDate;
